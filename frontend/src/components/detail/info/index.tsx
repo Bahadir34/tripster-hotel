@@ -43,7 +43,7 @@ const Info: FC<Props> = ({ place }) => {
             width="450"
             height="250"
             style={{ border: 0 }}
-            src={`https://www.google.com/maps/embed/v1/search?key=AIzaSyCe8ttuuPabBszpnTvOaQPm-VB8DV_6BNo&q=hotels+in+${place.location}`}
+            src={`https://www.google.com/maps/embed/v1/search?key=${import.meta.env.VITE_API_KEY}&q=hotels+in+${place.location}`}
           ></iframe>
         </div>
       </div>
